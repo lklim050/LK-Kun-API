@@ -141,7 +141,7 @@ const BusCard = (props) => {
       <div className="flex-1 min-w-0">
         {sortedServices.length > 0 ? (
           /* grid-cols-2 on small tablets, grid-cols-1 on phones */
-          <ul className="list-none p-0 m-0 flex flex-wrap gap-3">
+          <ul className="list-none p-0 m-0 flex flex-wrap gap-1">
             {sortedServices.map((item, index) => {
               const nextBuses = [
                 item.NextBus,
