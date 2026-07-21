@@ -114,30 +114,30 @@ const DashBoard = () => {
         DASHBOARD
       </h1>
       <hr className="border-black-500" />
-      <div className="flex flex-row gap-4 justify-evenly">
+      <div className="flex flex-row gap-1 sm:gap-4 justify-evenly">
         <button
           onClick={() => setShowModal(true)}
-          className="px-4 py-2  bg-lime-300 text-green-900 text-sm sm:text-base hover:bg-green-700 rounded-md"
+          className="flex-1 min-w-0 px-2 sm:px-4 py-2 bg-lime-300 text-green-900 text-[11px] sm:text-base hover:bg-green-700 rounded-md "
         >
           ADD BUS STOP
         </button>
         <button
           onClick={() => userLocationQuery.refetch()}
-          className="px-4 py-2  bg-slate-700 text-white text-sm sm:text-base hover:bg-slate-300 rounded-md"
+          className="flex-1 min-w-0 px-2 sm:px-4 py-2 bg-slate-700 text-white text-[11px] sm:text-base hover:bg-slate-300 rounded-md"
         >
           Refresh Location
         </button>
         <button
           onClick={toggleTest}
           className={
-            "px-4 py-2 rounded-md text-white text-sm sm:text-base bg-slate-700 hover:bg-slate-300"
+            "flex-1 min-w-0 px-2 sm:px-4 py-2 rounded-md text-white text-[11px] sm:text-base bg-slate-700 hover:bg-slate-300 "
           }
         >
           Test ALERT
         </button>
         <button
           onClick={() => setAlertModal(true)}
-          className={`px-4 py-2 rounded-md text-white text-sm sm:text-base hover:bg-blue-700 ${alertStatus === 2 || alertStatus === 3 ? "bg-red-500 animate-pulse" : "bg-blue-600"}`}
+          className={`flex-1 min-w-0 px-2 sm:px-4 py-2 rounded-md text-white text-[11px] sm:text-base hover:bg-blue-700  ${alertStatus === 2 || alertStatus === 3 ? "bg-red-500 animate-pulse" : "bg-blue-600"}`}
         >
           ALERT
         </button>
